@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduform - A Reforming Platform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Calibri', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #fff;
+      background: #003087;
+    }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo img {
+      height: 300px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003087;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    nav a:hover {
+      color: #f7b731;
+    }
+
+    .hero {
+      background: #006400;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+      border-radius: 15px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: rgb(255, 140, 0);
+    }
+
+    section h2 a {
+      color: rgb(255, 140, 0);
+      text-decoration: none;
+    }
+
+    section h2 a:hover {
+      color: #f7b731;
+    }
+
+    section p, section li {
+      font-size: 1.1rem;
+    }
+
+    .section-links ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section-links li {
+      margin-bottom: 1rem;
+    }
+
+    .section-links a {
+      color: rgb(255, 140, 0);
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .section-links a:hover {
+      color: #f7b731;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      font-size: 1rem;
+      background: #fff;
+      color: #003087;
+    }
+
+    .contact button {
+      padding: 0.75rem;
+      background: #f7b731;
+      color: #003087;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #e0a21e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #fff;
+      color: #003087;
+    }
+
+    .bottom-nav {
+      background: #fff;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+    }
+
+    .bottom-nav nav a {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .bottom-nav nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+      }
+
+      .section-links a {
+        font-size: 1.8rem;
+      }
+
+      nav .logo img {
+        height: 150px;
+      }
+
+      nav a {
+        font-size: 1.4rem;
+      }
+
+      .bottom-nav nav a {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="edufy-logo.png" alt="Edufy Logo">
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="disabilities.html">Disabilities</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="resources.html">Get Help</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to <strong>Eduform</strong></h2>
+    <p>An accessible, easy, informative, and useful platform on Special Education 
+    <br>+<br>
+     A STEAM initiative to raise awareness and support special education in Quebec and Montreal </p>
+  </section>
+
+  <section id="section-links" class="section-links">
+    <ul>
+      <li><a href="#about">About Our Project</a><p>We want to make the education system more inclusive, accessible, and overall a more enjoyable experience for everyone. Our website aims to raise awareness and facilitate the help-seeking process for parents/students and teachers. Plus, our Real-Life, 3D-Printed model of a disability-friendly school showcases our vision for a better schooling system, one that educates everyone.</p></li>
+      <li><a href="disabilities.html">Understanding Disabilities</a><p>Learn about some of the learning disabilities that many students face in their day-to-day school life.</p></li>
+      <li><a href="solutions.html">Proposed Solutions ✅💡</a><p>Check out some of the possible changes and modifications that will help us improve the SpecialEd system.</p></li>
+      <li><a href="videos.html">SpecialEd in Reality 👩‍🏫💬🗣️</a><p>Watch and read from the people directly involved in the current Special Education System.</p></li>
+      <li><a href="resources.html">Resources to get assistance 🌎🏫</a><p>Find your local resources for assistance, help and Special Education Programs.</p></li>
+      <li><a href="#contact">Contact Us 📧</a></li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2><a href="#about">Our Goal 🎯</a></h2>
+    <p>Our current special education system has many defects and it is not able to cater to the needs of all students that require it. Massive issues like financial cuts, lack of professional individuals and infrastructures, and last but not least the uneducated-ness of teachers, parents and even students stand in the way of an inclusive and accessible, quality education for many students. We are here to change that, and we do it by various ways such as the EduForm Website.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2><a href="#contact">Questions, Comments, and Concerns</a></h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <div class="bottom-nav">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="disabilities.html">Disabilities</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="resources.html">Get Help</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <footer>
+    <p>© 2025 ELA-5ST 50- Group 3 STEAM Project. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Form submission (placeholder)
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Form submitted! (Placeholder - add backend logic later.)');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
